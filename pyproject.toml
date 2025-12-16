@@ -1,0 +1,65 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "recaptcha-domain-replicator"
+version = "1.0.1"
+description = "Serve a local replica of a reCAPTCHA widget and capture the token."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+license-files = ["LICENSE"]
+keywords = ["recaptcha", "captcha", "automation", "flask", "drissionpage"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+]
+dependencies = [
+  "DrissionPage>=4.1.1.2",
+  "Flask>=2.0",
+  "pyOpenSSL>=19.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.0",
+  "ruff>=0.5",
+  "mypy>=1.0",
+]
+
+[project.scripts]
+recaptcha-domain-replicator = "recaptcha_domain_replicator.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/DannyLuna17/RecaptchaDomainReplicator"
+Repository = "https://github.com/DannyLuna17/RecaptchaDomainReplicator"
+Issues = "https://github.com/DannyLuna17/RecaptchaDomainReplicator/issues"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["recaptcha_domain_replicator*"]
+
+[tool.setuptools.package-data]
+recaptcha_domain_replicator = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.mypy]
+python_version = "3.9"
+ignore_missing_imports = true
+warn_unused_ignores = true
+
+[tool.ruff]
+target-version = "py39"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["recaptcha_domain_replicator"]

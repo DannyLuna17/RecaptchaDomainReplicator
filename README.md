@@ -1,7 +1,7 @@
 <div align="left">
 
 # RecaptchaDomainReplicator
-<a href="LICENSE"></a> <img src="https://github.com/DannyLuna17/BulletDroid2/raw/image-data/license-badge.svg" alt="License: MIT" height="22" /> <a href="https://pypi.org/project/recaptcha-domain-replicator/"><img src="https://img.shields.io/pypi/v/recaptcha-domain-replicator" alt="PyPI version" /></a> <img src="https://img.shields.io/pypi/pyversions/recaptcha-domain-replicator" alt="Python versions" /> <a href="https://github.com/DannyLuna17/recaptcha_domain_replicator/actions/workflows/ci.yml"><img src="https://github.com/DannyLuna17/recaptcha_domain_replicator/actions/workflows/ci.yml/badge.svg" alt="CI" /></a> <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Colombia.svg" alt="Colombia Flag" height="22" />
+<a href="LICENSE"></a> <img src="https://github.com/DannyLuna17/BulletDroid2/raw/image-data/license-badge.svg" alt="License: MIT" height="22" /> <a href="https://pypi.org/project/recaptcha-domain-replicator/"><img src="https://img.shields.io/pypi/v/recaptcha-domain-replicator" alt="PyPI version" /></a> <img src="https://img.shields.io/pypi/pyversions/recaptcha-domain-replicator" alt="Python versions" /> <a href="https://github.com/DannyLuna17/RecaptchaDomainReplicator/actions/workflows/ci.yml"><img src="https://github.com/DannyLuna17/RecaptchaDomainReplicator/actions/workflows/ci.yml/badge.svg" alt="CI" /></a> <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Colombia.svg" alt="Colombia Flag" height="22" />
 
 <p align="center">
   

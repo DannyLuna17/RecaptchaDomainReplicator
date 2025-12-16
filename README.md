@@ -18,7 +18,7 @@ RecaptchaDomainReplicator generates a local HTML page that renders a reCAPTCHA w
 
 <p align="center">
 
-https://github.com/user-attachments/assets/e267756c-30e0-452a-9b3e-7cd566bebeb1
+https://github.com/user-attachments/assets/9a464e30-fae7-461e-ab84-37d6c4bec078
 
 </p>
 

@@ -35,7 +35,8 @@ https://github.com/user-attachments/assets/9a464e30-fae7-461e-ab84-37d6c4bec078
 • Proxy support (HTTP, HTTPS, SOCKS4, SOCKS5 with optional credentials)  
 • Domain bypass modes (VPN-friendly browser rules & hosts file fallback)  
 • HTTPS with temporary self-signed certificates  
-• Support for invisible reCAPTCHA, enterprise, custom actions, and `data-s` values
+• Support for invisible reCAPTCHA, enterprise, custom actions, and `data-s` values  
+• Invisible reCAPTCHA (v3) is executed automatically
 
 ---
 

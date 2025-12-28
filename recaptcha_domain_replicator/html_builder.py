@@ -54,9 +54,9 @@ def create_captcha_html(
     original_domain = urlparse(website_url).netloc if website_url else "unknown"
 
     api_script = (
-        f"//www.{api_domain}/recaptcha/enterprise.js?render=explicit"
+        f"//www.{api_domain}/recaptcha/enterprise.js?render=explicit&hl=en"
         if is_enterprise
-        else f"//www.{api_domain}/recaptcha/api.js?onload=onRecaptchaLoad&render=explicit"
+        else f"//www.{api_domain}/recaptcha/api.js?onload=onRecaptchaLoad&render=explicit&hl=en"
     )
 
     widget_label = "Invisible" if is_invisible else "Explicit checkbox"

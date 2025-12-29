@@ -12,7 +12,6 @@ import logging
 import os
 import shutil
 import signal
-import tempfile
 import threading
 from contextlib import suppress
 from pathlib import Path

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "recaptcha-domain-replicator"
-version = "1.0.3"
+version = "1.0.4"
 description = "Serve a local replica of a reCAPTCHA widget and capture the token."
 readme = "README.md"
 requires-python = ">=3.9"

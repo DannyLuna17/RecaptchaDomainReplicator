@@ -110,6 +110,17 @@ def _unregister_replicator(rep: RecaptchaDomainReplicator) -> None:
     _ACTIVE_REPLICATORS.discard(rep)
 
 
+def _get_proxy_extension_dir() -> str:
+    """Get a reliable directory for proxy extension."""
+    import uuid
+    home = Path.home()
+    ext_base = home / ".recaptcha_proxy_ext"
+    ext_base.mkdir(parents=True, exist_ok=True)
+    ext_dir = ext_base / f"ext_{uuid.uuid4().hex[:8]}"
+    ext_dir.mkdir(parents=True, exist_ok=True)
+    return str(ext_dir)
+
+
 class RecaptchaDomainReplicator:
     """
     Create and display a replicated reCAPTCHA challenge locally.
@@ -574,7 +585,7 @@ class RecaptchaDomainReplicator:
                     original_domain=original_domain, bypass_domain_check=bypass_domain_check
                 )
                 self._cleanup_proxy_extension()
-                ext_dir = tempfile.mkdtemp(prefix="rdr_proxy_auth_ext_")
+                ext_dir = _get_proxy_extension_dir()
                 self._proxy_extension_dir = create_proxy_auth_extension(
                     proxy=self._proxy, bypass_list=bypass_list, output_dir=ext_dir
                 )
@@ -595,7 +606,7 @@ class RecaptchaDomainReplicator:
                         original_domain=original_domain, bypass_domain_check=bypass_domain_check
                     )
                     self._cleanup_proxy_extension()
-                    ext_dir = tempfile.mkdtemp(prefix="rdr_proxy_auth_ext_")
+                    ext_dir = _get_proxy_extension_dir()
                     self._proxy_extension_dir = create_proxy_auth_extension(
                         proxy=self._proxy, bypass_list=bypass_list, output_dir=ext_dir
                     )
@@ -720,3 +731,4 @@ class RecaptchaDomainReplicator:
                 self.stop_http_server()
             finally:
                 _unregister_replicator(self)
+    

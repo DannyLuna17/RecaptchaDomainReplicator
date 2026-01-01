@@ -76,6 +76,7 @@ def create_browser_options(
     from DrissionPage import ChromiumOptions
 
     options = ChromiumOptions()
+    options.auto_port(True)
     if browser_path:
         options.set_browser_path(browser_path)
 

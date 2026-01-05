@@ -59,7 +59,7 @@ The library follows a simple four-step pipeline:
 
 • **Python**: 3.9+  
 • **Browser**: Chromium-based browser (Chrome, Chrome for Testing, Edge)  
-• **For credential proxies**: Use [Chrome for Testing](https://googlechromelabs.github.io/chrome-for-testing/#stable) or Microsoft Edge  
+• **For credential proxies**: Use [Chrome for Testing](https://googlechromelabs.github.io/chrome-for-testing/#stable) or Microsoft Edge (Newer versions of Google Chrome doesn't support this)
 • **Admin privileges** (optional): Required only for hosts file changes and port forwarding
 
 ---
